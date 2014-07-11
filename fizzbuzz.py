@@ -1,4 +1,3 @@
-
 # Get a valid number to count to
 while True:
     try:
