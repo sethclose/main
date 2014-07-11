@@ -7,7 +7,8 @@ while True:
         else:
           break
     except ValueError  as (strerror):
-        print "No valid integer! Please try again ... {}" .format (strerror)
+        print "Not a valid integer."
+        print "Value Error: {}" .format (strerror)
 
 # Print numbers or substitutes
 print "Fizz buzz counting up to n"
