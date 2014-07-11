@@ -9,17 +9,17 @@ while True:
         print "No valid integer! Please try again ... {}" .format (strerror)
         
 print "Fizz buzz counting up to n"
-
+result = ""
 for i in range(n):
-  result = ""
   j = i + 1
   if j % 3 == 0 and j % 5 == 0:
-    print "fizz buzz",
+    result += "fizz buzz"
   elif j % 3 == 0:
-    print "fizz",
+    result += "fizz"
   elif j % 5 == 0:
-    print "buzz",
+    result += "buzz"
   else:
-    print str(j),
+    result += str(j)
   if j != n:
-    print ",", 
+    result += ", "
+print result
