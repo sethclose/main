@@ -1,3 +1,5 @@
+
+# Get a valid number to count to
 while True:
     try:
         n = int(raw_input("Please enter an integer of at least 1: "))
@@ -7,7 +9,8 @@ while True:
           break
     except ValueError  as (strerror):
         print "No valid integer! Please try again ... {}" .format (strerror)
-        
+
+# Print numbers or substitutes
 print "Fizz buzz counting up to n"
 result = ""
 for i in range(n):
