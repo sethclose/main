@@ -1,4 +1,3 @@
-
 while True:
     try:
         n = int(raw_input("Please enter an integer of at least 1: "))
@@ -12,6 +11,7 @@ while True:
 print "Fizz buzz counting up to n"
 
 for i in range(n):
+  result = ""
   j = i + 1
   if j % 3 == 0 and j % 5 == 0:
     print "fizz buzz",
@@ -22,4 +22,4 @@ for i in range(n):
   else:
     print str(j),
   if j != n:
-    print ",",
+    print ",", 
