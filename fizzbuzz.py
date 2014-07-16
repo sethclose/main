@@ -15,14 +15,14 @@ print "Fizz buzz counting up to n"
 result = ""
 for i in range(n):
   j = i + 1
-  if j % 3 == 0 and j % 5 == 0:
+  if j % 3 != 0 and j % 5 != 0:
+    result += str(j)
+  elif j % 3 == 0 and j % 5 == 0:
     result += "fizz buzz"
   elif j % 3 == 0:
     result += "fizz"
-  elif j % 5 == 0:
-    result += "buzz"
   else:
-    result += str(j)
+    result += "buzz"
   if j != n:
     result += ", "
 print result
