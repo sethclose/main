@@ -57,14 +57,15 @@ def FizzBuzz(n):
     result = ""
     for i in range(n):
       j = i + 1
-      if not Divisible(j,3) and not Divisible(j,5):
-          result += str(j)
-      elif Divisible(j,3) and Divisible(j,5):
-          result += "fizz buzz"
-      elif Divisible(j,3):
-          result += "fizz"
-      else:
+      if j % 5 != 0:
+          if j % 3 != 0:
+               result += str(j)
+          else:
+               result += "fizz"
+      elif j % 3 != 0:
           result += "buzz"
+      else:
+          result += "fizz buzz"
       if j != n:
           result += ", "
     print result
